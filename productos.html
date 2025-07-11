@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="icon" href="Img/Logo/icon.png">
+    <title>Piscinas Cuatro Soles</title>
+    <script defer src="./Script/index.js"></script>
+     
+
+</head>
+<body>
+  <a id="whatsapp-btn" href="https://wa.me/+5493407467163?text=Hola!%20Quiero%20realizar%20una%20consulta!" class="whatsapp-icon" target="_blank"> <img src="./Img/whatsapp.png" width="70px" height="70px" alt="whatsapp-fijo"></a>
+    <header>  
+     <nav>
+      <div class="logo">
+        <a href="./index.html"><img src="./Img/Logo/logo.jpg" alt="logo" width="150px" height="115px"></a>
+      </div>
+      
+      <ul class="menu">
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./catalogo.html">Catálogo</a></li>
+        <li><a href="./nosotros.html">Nosotros</a></li>
+        <li><a href="./galeria.html">Galería</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+        <button class="abrir-menu">abrir</button>
+      </ul>
+      <div class="menu-categoria">
+      <button class="ham">
+        <span class="br-1"></span>
+        <span class="br-2"></span>
+        <span class="br-3"></span>
+       </button>
+       <p>Categorías</p>
+      </div>  
+     </nav>
+    </header>
+    <section class="productos-lista">
+    <button class="ha3">
+        <span class="br-1"></span>
+        <span class="br-2"></span>
+        <span class="br-3"></span>
+       </button>
+    <ul class="menu-productos">
+      <li><a href="./mantenimiento.html">Accesorios y Mantenimiento</a></li>
+      <li><a href="./repuestos.html">Repuestos</a></li>
+      <li><a href="./losetas.html">Losetas</a></li>
+    </ul>
+  </section>
+     <section id="busqueda">
+       <div class="busqueda-wrapper"> 
+  <div class="form-busqueda oculto" id="form-busqueda">
+    <input type="text" id="buscador" placeholder="Buscar productos...">
+    </div>
+    <button class="boton-lupa" id="abrir-buscador">
+    <img class="boton-lupa" id="abrir-buscador" src="./Img/lupa.jpg" width="30px" height="30px" style="margin: 10px 10px 10px 0 ;">
+  </button>
+</div>
+  <div class="resultado" id="resultado"></div>
+</section>
+    <h2>Todos los Productos</h2>
+   <section class="contenido">
+  <div id="container"></div>
+  <div id="paginacion" class="paginacion"></div>
+  <div class="seleccion" id="seleccion" style="display: none;">
+    <div class="cerrar" onclick="cerrar()">&#x2715;</div> 
+    <div class="info">
+      <img id="img-producto" src="./Img/Productos/alguicida.jpg" alt="alguicida">
+      <button>
+        <a id="boton-wsp" href="#" target="_blank">Consultar</a>
+      </button>
+    </div>
+    <div class="info">
+      <h3 id="producto">Alguicida</h3>
+      <p id="descripcion">Descripción del producto</p>
+    </div>
+  </div>
+</section>
+<footer><section class="direcciones">
+  <ul>
+    <img src="./Img/Logo/logo.jpg" height="115px" width="150px" alt="logo-footer">
+    <li>Ramallo, provincia de Buenos Aires</li>
+    <li>Avenida San Martin 4507</li>
+    <li>piscinas4soles@gmail.com</li>
+  </ul>
+</section>
+<section class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d989.0203070406897!2d-60.03777756812879!3d-33.510364476127165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDMwJzM3LjkiUyA2MMKwMDInMTQuMSJX!5e0!3m2!1ses-419!2sar!4v1745634237729!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<section class="social">
+  <div id="instagram"><a href="https://www.instagram.com/piletas4soles" target="_blank"><img src="./Img/Instagram_logo_2022.svg.png" width="50px" height="50px"  alt="instagram"></a></div>
+  <div id="facebook"><a href="https://www.facebook.com/p/Piletas-4-soles-Ramallo-100063549828219/?locale=es_LA" target="_blank"><img src="./Img/facebook.png"  width="50px" height="50px"alt="facebook"></a></div>
+</section>
+</footer>
+
+</body>
+</html>

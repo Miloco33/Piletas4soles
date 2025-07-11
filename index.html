@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="icon" href="Img/Logo/icon.png">
+    <title>Piscinas Cuatro Soles</title>
+    <script defer src="./Script/script.js"></script>
+    <script type="module" src="./Script/buscador.js"></script>
+     
+</head>
+<body>
+    <header>  
+     <nav>
+      <div class="logo">
+        <a href="./index.html"><img src="./Img/Logo/logo.jpg" alt="logo" width="150px" height="115px"></a>
+      </div>
+      <ul class="menu">
+        <li><a href="./catalogo.html">Catálogo</a></li>
+        <li><a href="./nosotros.html">Nosotros</a></li>
+        <li><a href="./productos.html">Productos</a></li>
+        <li><a href="./galeria.html">Galería</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+      <button class="ham">
+       <span class="br-1"></span>
+       <span class="br-2"></span>
+       <span class="br-3"></span>
+      </button>
+     </nav>
+    </header>
+   <section id="busqueda">
+  <div class="busqueda-wrapper"> 
+    <div class="form-busqueda oculto" id="form-busqueda">
+      <input type="text" id="buscador" placeholder="Buscar productos...">
+    </div>
+    <button class="boton-lupa" id="abrir-buscador">
+      <img src="./Img/lupa.jpg" width="30px" height="30px" style="margin: 10px 10px 10px 0;">
+    </button>
+  </div> 
+  <div class="resultado" id="resultado"></div>
+  </section>
+  <div class="seleccion" id="seleccion" style="display: none;">
+  <div class="cerrar" onclick="cerrar()">&#x2715;</div>
+  <div class="info-contenedor">
+    <div class="info-img">
+      <img id="img-producto" src="./Img/Productos/alguicida.jpg" alt="alguicida">
+    </div>
+    <div class="info-texto">
+      <h3 id="producto">Alguicida</h3>
+      <p id="descripcion">Descripción del producto</p>
+      <a id="boton-wsp" href="#" target="_blank">Consultar</a>
+    </div>
+  </div>
+</div>
+    <img src="./Img/pool2.webp" alt="Piscina 4 Soles" width="100%" style="display: block; max-height: 500px; object-fit: cover;">
+<section style="text-align: center; padding: 2.5rem 1rem; font-family: sans-serif; background-color: #f0f8ff;">
+  <h1 style="font-size: 3rem; color: #004e92;">¡Bienvenidos a Piscinas 4 Soles!</h1>
+  <p style="font-size: 1.5rem; max-width: 700px; margin: 1.2rem auto; line-height: 1.6;">
+    Nos encanta acompañarte en cada etapa del camino hacia tu piscina ideal.<br>
+    Desde la elección hasta el mantenimiento, estamos para ayudarte con experiencia, compromiso y confianza.
+  </p>
+  <p style="font-style: italic; color: #007BFF; font-size: 1.6rem;">💧 Porque tu tranquilidad es tan importante como tu disfrute.</p>
+  <div style="margin-top: 2rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+    <a href="./catalogo.html" style="padding: 0.9rem 1.5rem; background-color: #007BFF; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; transition: background 0.3s;">
+      Mirá nuestro Catálogo
+    </a>
+    <a href="https://wa.me/+543407467163?text=Hola%2C+quiero+agendar+una+visita+por+una+pileta" target="_blank" style="padding: 0.9rem 1.5rem; background-color: #25D366; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; transition: background 0.3s;">
+      Agendá una consulta por WhatsApp
+    </a>
+  </div>
+   </section> 
+       <section class="sonar">
+         <h2 style="margin: 50px 0;">Robot Nataclor Sonar 30 - Barrefondo Piscinas</h2>
+     <section id="galeria">
+     <img src="./Img/Sonar 30/Niya_Sonar_30_2_1200px.webp" alt="">
+     <img src="./Img/Sonar 30/Niya_Sonar_30_3_1200px.webp" alt="">
+     <img src="./Img/Sonar 30/sonar30.webp" alt="">
+     <img src="./Img/Sonar 30/1.webp" alt="">
+     <img src="./Img/Sonar 30/2.webp" alt="">
+     <img src="./Img/Sonar 30/3.webp" alt="">
+            <section id="contenedor-principal">
+    <div id="contenedor-interno">
+        <img id="img-activa" src="./Img/Sonar 30/Niya_Sonar_30_2_1200px.webp" alt="1">
+        <button id="btn-cierra" type="button">x</button>
+        <button id="btn-retrocede" type="button">&lt;</button>
+        <button id="btn-adelanta" type="button">&gt;</button>
+    </div>
+</section>
+     </section>
+    <div class="consultar">
+          <button class="boton-consultar" type="button" ><a href="./robotsonar.html" >Ver más</a></button>
+        </div>
+        </section>
+        <h2>Productos destacados</h2>
+        <section>
+        <div class="container">
+       <div class="producto"> 
+        <a href="./productos.html" style="text-decoration: none;">
+          <div class="imagen-producto">
+          <img src="./Img/Productos/alguicida.jpg" width="100px" height="100px" alt="alguicida-nataclor">
+           </div>
+          <div class="nombre-producto">Alguicida</div>
+        </a>
+        </div>
+            <div class="producto">
+               <a href="./productos.html" style="text-decoration: none;">
+              <div class="imagen-producto">  
+              <img src="./Img/Productos/clarificador.jpg" width="100px" height="100px" alt="alguicida-nataclor">
+               </div>
+              <div class="nombre-producto">Clarificador</div>
+            </a>
+         </div>
+          <div class="producto">
+             <a href="./productos.html" style="text-decoration: none;">
+              <div class="imagen-producto">  
+              <img src="./Img/Productos/cloro1kgbolsa.jpg" width="100px" height="100px" alt="cloro1kgbolsa">
+               </div>
+              <div class="nombre-producto">Cloro x 1kg</div>
+              </a>
+         </div>
+          <div class="producto">
+             <a href="./productos.html" style="text-decoration: none;">
+              <div class="imagen-producto">  
+              <img src="./Img/Productos/acidomuriatico.webp" width="100px" height="100px" alt="acidomuriatico">
+               </div>
+              <div class="nombre-producto">Ácido Muriático</div>
+              </a>
+         </div>
+         </div>
+         <a href="./productos.html"  class="vermasproductos"> Ver más productos</a>
+         </section>
+         <div class="espacio"></div>
+         <section style="padding: 2rem; background-color: #f3f3f3; text-align: center;">
+  <h1 style="font-size: 1.7rem; color: #004e92;"💡>Recomendaciones para usar correctamente el filtro de tu piscina</h1>
+  <p style="font-size: 1.5rem; max-width: 700px; margin: 1.2rem auto; line-height: 1.6;">Mirá este video práctico para cuidar tu equipo y mejorar el mantenimiento del agua.</p>
+  <video width="80%" controls>
+    <source src="./videos/cuidados induplast.mp4" type="video/mp4">
+    Tu navegador no soporta la reproducción de video.
+  </video>
+</section>
+    <a id="whatsapp-btn" href="https://wa.me/+5493407467163?text=Hola!%20Quiero%20realizar%20una%20consulta!"  class="whatsapp-icon" target="_blank"> <img src="./Img/whatsapp.png" width="70px" height="70px" alt="whatsapp-fijo"></a>
+    
+    <div class="espacio"></div>
+   
+    <footer><section class="direcciones">
+        <ul>
+          <img src="./Img/Logo/logo.jpg" height="115px" width="150px" alt="logo-footer">
+          <li>Ramallo, provincia de Buenos Aires</li>
+          <li>Avenida San Martin 4507</li>
+          <li>piscinas4soles@gmail.com</li>
+        </ul>
+      </section>
+      <section class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d989.0203070406897!2d-60.03777756812879!3d-33.510364476127165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDMwJzM3LjkiUyA2MMKwMDInMTQuMSJX!5e0!3m2!1ses-419!2sar!4v1745634237729!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+      <section class="social">
+        <div id="instagram"><a href="https://www.instagram.com/piletas4soles" target="_blank"><img src="./Img/Instagram_logo_2022.svg.png" width="50px" height="50px"  alt="instagram"></a></div>
+        <div id="facebook"><a href="https://www.facebook.com/p/Piletas-4-soles-Ramallo-100063549828219/?locale=es_LA" target="_blank"><img src="./Img/facebook.png"  width="50px" height="50px"alt="facebook"></a></div>
+      </section>
+    </footer>
+</body>
+</html>

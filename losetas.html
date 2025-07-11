@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="icon" href="Img/Logo/icon.png">
+    <title>Piscinas Cuatro Soles</title>
+    <script defer src="./Script/index.js"></script>
+    <script defer src="./Script/script2.js"></script>
+</head>
+<body>
+    <header>  
+     <nav>
+      <div class="logo">
+        <a href="./index.html"><img src="./Img/Logo/logo.jpg" alt="logo" width="150px" height="115px"></a>
+      </div>
+      <ul class="menu">
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./catalogo.html">Catálogo</a></li>
+        <li><a href="./nosotros.html">Nosotros</a></li>
+        <li><a href="./galeria.html">Galería</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+      <button class="ham">
+       <span class="br-1"></span>
+       <span class="br-2"></span>
+       <span class="br-3"></span>
+      </button>
+     </nav>
+    </header>
+     <section class="productos-lista">
+    <button class="ha3">
+        <span class="br-1"></span>
+        <span class="br-2"></span>
+        <span class="br-3"></span>
+       </button>
+    <ul class="menu-productos">
+      <li><a href="./productos.html">Todos los Productos</a></li>
+      <li><a href="./repuestos.html">Repuestos</a></li>
+      <li><a href="./mantenimiento.html">Accesorios y Mantenimiento</a></li>
+    </ul>
+  </section>
+  <h2>Losetas</h2>
+  <section class="contenido">
+    <div class="container">
+
+         <div class="producto" onclick="cargar(this)" data-descripcion="Designación: B-V Ø 2 BORDE VIATTTURI DIÁMETRO 2 mts.<br>
+Medidas nominales: 54,5 x 28,5 cm.<br>
+Peso (kg): 11.<br>
+Piezas: 1.<br>
+Cantidad por pallet: 28.<br>"> 
+          <div class="imagen-producto">
+          <img src="./Img/Productos/Losetas/BORDE CURVO VIATTURI Ø 2 M 54,5 x 28,5 cm.jpg" style="background: #f3f3f3" alt="">
+           </div>
+          <div class="nombre-producto">Borde Curvo</div>
+        </div>
+
+        <div class="producto" onclick="cargar(this)" data-descripcion="COLOR: BLANCO.<br>
+MEDIDA (CM): 54,5 x 54,5.<br>
+TIPOLOGÍA: LOSETA ATERMICA.<br>
+PESO (KG): 23 KG."> 
+          <div class="imagen-producto">
+          <img src="./Img/Productos/Losetas/borde-radio-500-blanco-545x545-monaco.png" style="background: #f3f3f3" alt="">
+           </div>
+          <div class="nombre-producto">Borde Radio 500</div>
+        </div>
+
+        <div class="producto" onclick="cargar(this)" data-descripcion="Esta línea cuenta con un marcado estilo minimalista siguiendo las últimas tenencias de la construcción. La línea L se presenta en 2 medidas: 50x50 y 50x25 cm. Ambos modelos cuentan con idéntico desarrollo frontal mientras que la diferencia se establece en la profundidad de cada pieza.<br>
+         Tecnología:<br>
+          -Resistente.<br>
+           -Atérmico.<br>
+            -Anti réflex.<br>
+             -Antideslizante.`"> 
+          <div class="imagen-producto">
+          <img src="./Img/Productos/Losetas/BordeL.jpg" style="background: #f3f3f3" alt="">
+           </div>
+          <div class="nombre-producto">Borde L</div>
+        </div>
+
+        <div class="producto" onclick="cargar(this)" data-descripcion="Absorben hasta 15° C menos de temperatura que otras superficies por ser fabricados en un 100% con material atérmico.<br>
+Únicos certificados por CECOVI (Centro de Investigación y Desarrollo para la Construcción y la Vivienda de la Universidad Tecnológica Nacional) para las piezas color Blanco y Marfil."> 
+          <div class="imagen-producto">
+          <img src="./Img/Productos/Losetas/esquinero.jpg" style="background: #f3f3f3" alt="">
+           </div>
+          <div class="nombre-producto">Esquinero</div>
+        </div>
+
+        <div class="producto" onclick="cargar(this)" data-descripcion="Designación: B-VRC BORDE VIATTURI RINCÓN CURVO (A Y B).<br>
+Medidas nominales: 52 x 54 cm.<br>
+Peso (kg): 12.5.<br>
+Piezas: 1.<br>
+Cantidad por pallet: 40."> 
+          <div class="imagen-producto">
+          <img src="./Img/Productos/Losetas/rinconCurvo.jpg" style="background: #f3f3f3" alt="">
+           </div>
+          <div class="nombre-producto">Rincón curvo (A y B)</div>
+        </div>
+
+
+        <div class="producto" onclick="cargar(this)" data-descripcion="Medidas: 50x50x3 cm.<br>
+Apto para exterior: Sí.<br>
+Rendimiento: 0.5 m².<br>
+Peso de cada unidad: 15 kg.<br>
+Peso del m2: 60 kg.`"> 
+          <div class="imagen-producto">
+          <img src="./Img/Productos/Losetas/solarium50x50.webp" style="background: #f3f3f3" alt="">
+           </div>
+          <div class="nombre-producto">Solarium 50x50</div>
+        </div>
+
+        </div>
+        <div class="seleccion" id="seleccion" style="display: none;">
+  <div class="cerrar" onclick="cerrar()">&#x2715;</div>
+  <div class="info"><img id="img-producto" src="./Img/Productos/Losetas/BORDE CURVO VIATTURI Ø 2 M 54,5 x 28,5 cm.jpg" alt=""></div>
+  <div class="info">
+    <h3 id="producto">BORDE CURVO VIATTURI</h3>
+    <p id="descripcion">Descripción del producto</p>
+    <button>
+      <a id="boton-wsp" href="#" target="_blank">Consultar</a>
+    </button>
+  </div>
+</div>
+    </section>
+     <a id="whatsapp-btn"  href="https://wa.me/+5493407467163?text=Hola!%20Quiero%20realizar%20una%20consulta!" class="whatsapp-icon" target="_blank"> <img src="./Img/whatsapp.png" width="70px" height="70px" alt="whatsapp-fijo"></a>
+    <footer><section class="direcciones">
+        <ul>
+          <img src="./Img/Logo/logo.jpg" height="115px" width="150px" alt="logo-footer">
+          <li>Ramallo, provincia de Buenos Aires</li>
+          <li>Avenida San Martin 4507</li>
+          <li>piscinas4soles@gmail.com</li>
+        </ul>
+      </section>
+      <section class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d989.0203070406897!2d-60.03777756812879!3d-33.510364476127165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDMwJzM3LjkiUyA2MMKwMDInMTQuMSJX!5e0!3m2!1ses-419!2sar!4v1745634237729!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+      <section class="social">
+        <div id="instagram"><a href="https://www.instagram.com/piletas4soles" target="_blank"><img src="./Img/Instagram_logo_2022.svg.png" width="50px" height="50px"  alt="instagram"></a></div>
+        <div id="facebook"><a href="https://www.facebook.com/p/Piletas-4-soles-Ramallo-100063549828219/?locale=es_LA" target="_blank"><img src="./Img/facebook.png"  width="50px" height="50px"alt="facebook"></a></div>
+      </section>
+    </footer>
+    </body>
+    </html>
+    

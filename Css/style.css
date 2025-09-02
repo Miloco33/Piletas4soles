@@ -780,8 +780,8 @@ h2 a:hover{
    justify-content: space-between;
    gap: 10px;
    width: 100%;
-    list-style-type: none;
-    background-color: rgba(0, 0, 0, 0.562);
+   list-style-type: none;
+    
  }
  .catalogo-lista .menu-catalogo a{
     padding:5px;
@@ -793,6 +793,7 @@ h2 a:hover{
     font-size:medium;
     color: #f3f3f3;
     transition: 0.3s;
+    background-color: rgb(33, 114, 190);
  }
 
  .catalogo-lista .menu-catalogo a:hover{

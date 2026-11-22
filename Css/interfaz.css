@@ -102,6 +102,7 @@ body {
 
 .subnav {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
@@ -557,12 +558,43 @@ body.ficha-abierta {
 }
 
 @media (max-width: 1000px) {
+  .site-header {
+    height: 72px;
+    min-height: 72px;
+    padding: 0 14px;
+    gap: 8px;
+  }
+
+  .site-header .logo img {
+    width: 86px;
+  }
+
+  .site-header nav {
+    position: static;
+    width: 0;
+    height: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    flex: 0 0 auto;
+  }
+
   .site-header .ham {
     display: flex;
+    align-items: center;
+    order: 2;
+    margin-left: auto;
+    position: relative;
+    top: auto;
+    right: auto;
   }
 
   .site-header .menu {
     display: none;
+    opacity: 1;
+    height: auto;
+    background: transparent;
   }
 
   .site-header .menu.activado {
@@ -573,29 +605,70 @@ body.ficha-abierta {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     height: 100vh;
     margin: 0;
-    padding: 24px;
+    padding: 72px 20px 24px;
     opacity: 1;
-    background: rgba(8, 28, 40, 0.98);
+    background: #081c28;
   }
 
-  .site-header .menu a {
+  .site-header .menu.activado li {
+    width: auto;
+    margin: 0;
+    background: transparent;
+  }
+
+  .site-header .menu.activado a {
     color: #f3f3f3;
     background: transparent;
+    height: auto;
+    width: auto;
     font-size: 2rem;
-    padding: 12px 18px;
+    font-weight: 600;
+    padding: 12px 20px;
+  }
+
+  .site-header .menu.activado a[aria-current="page"] {
+    background: #fdb347;
+    color: #142028;
+  }
+
+  body:has(.menu.activado) .whatsapp-icon,
+  body.ficha-abierta .whatsapp-icon {
+    visibility: hidden;
+  }
+
+  .subnav {
+    top: 72px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 12px;
+  }
+
+  .subnav a,
+  .filtro {
+    font-size: 1.3rem;
+    padding: 7px 11px;
   }
 
   .hero,
   .servicios {
     grid-template-columns: 1fr;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
-  .hero h1,
+  .hero {
+    padding-top: 22px;
+    gap: 16px;
+  }
+
+  .hero h1 {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+
   .hero p {
     text-align: center;
   }
@@ -605,14 +678,111 @@ body.ficha-abierta {
   }
 
   .hero img {
-    height: 220px;
+    height: 210px;
+  }
+
+  .grilla {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .producto .nombre-producto {
+    font-size: 1.35rem;
+    min-height: 3.8rem;
+  }
+
+  .grupo,
+  .modelo,
+  .bloque,
+  .contacto-wrap,
+  .sonar {
+    width: min(100% - 24px, 1100px);
+  }
+
+  #buscador.buscador {
+    width: calc(100% - 24px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ficha {
+    align-items: stretch;
+    padding: 10px;
   }
 
   .ficha-card {
+    display: flex;
+    flex-direction: column;
     grid-template-columns: 1fr;
+    width: 100%;
+    max-height: calc(100vh - 20px);
+    padding: 14px;
+    gap: 12px;
   }
 
-  .subnav {
-    top: 72px;
+  .ficha-card img {
+    height: 150px;
+    margin: 0;
+  }
+
+  .ficha-card > div {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .ficha-card h2 {
+    font-size: 2rem;
+  }
+
+  #ficha-descripcion {
+    max-height: 26vh;
+    overflow: auto;
+    margin: 0;
+  }
+
+  .ficha-card .btn-wsp {
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .whatsapp-icon {
+    right: 14px;
+    bottom: 14px;
+  }
+
+  .whatsapp-icon img {
+    width: 56px;
+    height: 56px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 16px 88px;
+  }
+
+  footer .mapa,
+  footer .direcciones,
+  footer .social {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  footer .social {
+    justify-content: center;
+    padding-bottom: 0;
+  }
+
+  footer > .direcciones > ul {
+    padding: 0 0 8px;
+  }
+
+  .sonar li,
+  .sonar > ul > li {
+    margin: 8px 0;
   }
 }
